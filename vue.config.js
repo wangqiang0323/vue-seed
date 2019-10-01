@@ -5,8 +5,15 @@ module.exports = {
 			'/': {
 				target: 'http://yapi.demo.qunar.com/mock/1016',
 				ws: false,
-        changeOrigin: true
+				changeOrigin: true
 			}
 		}
-	}
+	},
+	// configureWebpack: config => {
+	// 	config.plugins.forEach((item, i) => {
+	// 		if (item.tsconfig) {
+	// 			config.plugins.splice(i, 1);
+	// 		}
+	// 	})
+	// }
 }

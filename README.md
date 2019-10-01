@@ -10,6 +10,7 @@
 - Axios
 - Vant
 - Typescript
+- Bimface
 
 ## Project setup
 ```

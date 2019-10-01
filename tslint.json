@@ -11,15 +11,34 @@
   "rules": {
     "indent": [true, "spaces", 2],
     "interface-name": false,
+    "space-before-function-paren": false,
     "no-consecutive-blank-lines": false,
+    "triple-equals": false,
     "object-literal-sort-keys": false,
     "ordered-imports": false,
+    "member-access": false,
+    "member-ordering": false,
+    "no-var-keyword": false,
+    "no-console": false,
+    "prefer-for-of": false,
+    "no-empty": false,
+    "array-type": false,
+    "curly": false,
+    "one-variable-per-declaration": false,
+    "only-arrow-functions": false,
+    "ban-types": false,
+    "no-unused-expression": false,
+    "object-literal-key-quotes": false,
+    "comment-format": false,
+    "max-line-length": false,
+    "variable-name": false,
     "quotemark": [false, "single"],
     "semicolon": [false, "always"],
     "no-string-literal": true,
+    "prefer-const": false,
     "quote-props": [false, "always"],
     "no-shadowed-variable": [
-      true,
+      false,
       {
         "class": true,
         "enum": true,
@@ -30,7 +49,7 @@
         "typeParameter": false
       }
     ],
-    "trailing-comma": [true, {
+    "trailing-comma": [false, {
       "singleline": "never",
       "multiline": {
         "objects": "ignore",

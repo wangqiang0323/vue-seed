@@ -10,7 +10,7 @@ export default new Router({
   routes: [
     {
       path: '*',
-      name: 'home',
+      redirect: '/',
       component: Home,
     },
     {
@@ -30,6 +30,11 @@ export default new Router({
       path: '/articles',
       name: 'articles',
       component: () => import(/* webpackChunkName: "article" */ './views/Articles.vue'),
+    },
+    {
+      path: '/bimface',
+      name: 'bimface',
+      component: () => import(/* webpackChunkName: "article" */ './views/Bimface.vue'),
     },
   ],
 });
