@@ -1,14 +1,29 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> | 
-      <router-link to="/articles">Articles</router-link> |
-      <router-link to="/bimface">Bimface</router-link>
+      {{devicePixelRatio}}
+      <router-link to="/">Home</router-link>|
+      <router-link to="/about">About</router-link>|
+      <router-link to="/articles">Articles</router-link>|
+      <router-link to="/bimface">Bimface</router-link>|
+      <router-link to="/animate">Animate</router-link>
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
+<script lang="ts">
+import Vue from 'vue'
+import Component from 'vue-class-component'
+
+@Component
+export default class App extends Vue {
+  devicePixelRatio: any = null
+
+  mounted() {
+    this.devicePixelRatio = window.devicePixelRatio
+  }
+}
+</script>
 
 <style lang="scss">
 #app {
@@ -27,5 +42,8 @@
       color: #42b983;
     }
   }
+}
+body {
+  font-size: 16px;
 }
 </style>

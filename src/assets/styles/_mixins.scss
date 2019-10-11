@@ -1,0 +1,25 @@
+@mixin clearfix {
+  display: inline-block;
+
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+
+  * html & {
+    height: 1px
+  }
+}
+
+@mixin large-text {
+  font: {
+    family: Arial;
+    size: 20px;
+    weight: bold;
+  }
+
+  color: #ff0000;
+}

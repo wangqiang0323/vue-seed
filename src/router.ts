@@ -36,5 +36,10 @@ export default new Router({
       name: 'bimface',
       component: () => import(/* webpackChunkName: "article" */ './views/Bimface.vue'),
     },
+    {
+      path: '/animate',
+      name: 'animate',
+      component: () => import(/* webpackChunkName: "article" */ './views/Animate.vue'),
+    },
   ],
 });

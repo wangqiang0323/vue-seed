@@ -12,8 +12,8 @@ export default class TPath extends Vue {
   public renderer: THREE.WebGLRenderer
   @Prop() private msg!: string
 
-  private width: number = 300
-  private height: number  = 300
+  private width: number = document.body.clientWidth
+  private height: number = 300
 
   constructor() {
     super()

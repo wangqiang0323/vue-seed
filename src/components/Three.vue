@@ -13,7 +13,7 @@ export default {
       material: null,
       mesh: null,
       renderer: null,
-      width: 300,
+      width: document.body.clientWidth,
       height: 300
     }
   },
@@ -47,7 +47,7 @@ export default {
     animate() {
       requestAnimationFrame(this.animate)
 
-      this.mesh.rotation.x += 0.01
+      // this.mesh.rotation.x += 0.01
       this.mesh.rotation.y += 0.02
 
       this.renderer.render(this.scene, this.camera)

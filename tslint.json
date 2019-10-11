@@ -1,12 +1,8 @@
 {
   "defaultSeverity": "warning",
-  "extends": [
-    "tslint:recommended"
-  ],
+  "extends": ["tslint:recommended"],
   "linterOptions": {
-    "exclude": [
-      "node_modules/**"
-    ]
+    "exclude": ["node_modules/**"]
   },
   "rules": {
     "indent": [true, "spaces", 2],
@@ -23,6 +19,7 @@
     "prefer-for-of": false,
     "no-empty": false,
     "array-type": false,
+    "arrow-parens": false,
     "curly": false,
     "one-variable-per-declaration": false,
     "only-arrow-functions": false,
@@ -49,14 +46,17 @@
         "typeParameter": false
       }
     ],
-    "trailing-comma": [false, {
-      "singleline": "never",
-      "multiline": {
-        "objects": "ignore",
-        "arrays": "always",
-        "functions": "never",
-        "typeLiterals": "ignore"
+    "trailing-comma": [
+      false,
+      {
+        "singleline": "never",
+        "multiline": {
+          "objects": "ignore",
+          "arrays": "always",
+          "functions": "never",
+          "typeLiterals": "ignore"
+        }
       }
-    }]
+    ]
   }
 }
